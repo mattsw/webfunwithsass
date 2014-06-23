@@ -1,0 +1,45 @@
+/*Demo the use of string interpolation*/
+/*Demo a basic operation here*/
+.test-style {
+  color: red;
+  font-size: 30px; }
+
+/*Demo the basic use of variables here*/
+.test-style-two {
+  font-family: Helvetica, sans-serif;
+  color: #11dddd;
+  font-size: 28px; }
+
+/*Demo the use of basic operations here*/
+.test-operations {
+  font-size: 20px -6;
+  color: #808080; }
+
+/*
+    Demo the use of functions here
+
+    round(), ceil(), floor() and percentage() are all functions that can be used as well
+*/
+.test-color-functions {
+  color: #00f746;
+  font-size: 54px; }
+
+/* Nested use */
+.item {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 14px; }
+
+/*For loop usage(s) */
+.col-0 {
+  font-size: 12px; }
+
+.col-1 {
+  font-size: 19px; }
+
+.col-2 {
+  font-size: 26px; }
+
+.col-3 {
+  font-size: 33px; }
+
+/*# sourceMappingURL=styles.css.map */

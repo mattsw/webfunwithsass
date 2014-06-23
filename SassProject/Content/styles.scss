@@ -1,0 +1,52 @@
+﻿/*Demo the use of string interpolation*/
+$baseClassName: "test-";
+
+/*Demo a basic operation here*/
+.#{$baseClassName}style{
+    color:red;
+    font-size:10px + 20px;
+}
+
+/*Demo the basic use of variables here*/
+$specialColor: #11dddd;
+$stylesList: Helvetica, sans-serif;
+$fontSize: 24px + 10px - 12px / 2px;
+.#{$baseClassName}style-two{
+    font-family: $stylesList;
+    color: $specialColor;
+    font-size: $fontSize;
+}
+
+/*Demo the use of basic operations here*/
+.#{$baseClassName}operations{
+    font-size: 20px -6;
+    color: (#fff / 2);
+}
+
+/*
+    Demo the use of functions here
+
+    round(), ceil(), floor() and percentage() are all functions that can be used as well
+*/
+$testColor: #11FF55;
+.#{$baseClassName}color-functions{
+    color: darken($testColor, 5%);
+    font-size: if(1==1, 54px, 6px);
+}
+
+/* Nested use */
+.item{
+    font:{
+        family: Verdana, Helvetica, sans-serif;
+        size: 14px;
+    }
+}
+
+$baseFontSize: 12px;
+
+/*For loop usage(s) */
+@for $num from 0 through 3 {
+    .col-#{$num} {
+        font-size: #{if($num == 0, $baseFontSize + $num * 3,$baseFontSize + $num * 7)};
+    }
+}
